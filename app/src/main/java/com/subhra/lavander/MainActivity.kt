@@ -1,5 +1,6 @@
 package com.subhra.lavander
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -8,6 +9,7 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 
@@ -35,5 +37,17 @@ class MainActivity : AppCompatActivity() {
             super.onBackPressed()
         }
     }
+
+    fun loginBtnNavClicked(view: View){
+        val mainloginpage = Intent(this,LoginActivity::class.java)
+        startActivity(mainloginpage)
+
+    }
+    fun addChannelBtnClick(view: View){
+    }
+    fun sendMsgBtnClicked(view: View){
+
+    }
+
 
 }
