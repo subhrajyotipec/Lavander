@@ -1,5 +1,6 @@
 package com.subhra.lavander
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -38,6 +39,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun loginBtnNavClicked(view: View){
+        val mainloginpage = Intent(this,LoginActivity::class.java)
+        startActivity(mainloginpage)
 
     }
     fun addChannelBtnClick(view: View){
